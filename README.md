@@ -1,6 +1,7 @@
-# Coding BootCamp Homework 1
+# Project: Coding BootCamp Homework 1
+# Topic: HTML CSS Git: Code Refactor
 # By Tong (Richard) Yang
-# HTML CSS Git: Code Refactor
+#
 
 # Due Date: Jan 14, 2021
 # Grade: Pending
