@@ -8,6 +8,8 @@ body {
     background-color: #d9dcd6;
 }
 
+/* Semantic change: replaced all .header class selector with header tag selector.
+Since header is specified in semantic format, there is no need to define another class for header. */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +17,19 @@ header {
     color: #ffffff;
 }
 
-h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* For seo, since this is a very specific style, replaced class selector .seo with id selector #seo.
+Furthermore, since this selector is very specific, no need to specify head and h1. */
 #seo {
     color: #d9dcd6;
 }
 
+/* Semantic change: replaced the div selector within header with nav since navigation is the only 
+purpose for this division. Therefore, replacing all the .header div selector with nav tag selector.*/
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,16 +38,18 @@ nav {
     font-size: 20px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-li {
+/* To ensure long term sustainability of our code, all the selectors have they layers specified, since
+we do not know if client is going to add more content, it is safer to do this way. */
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
+nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -52,6 +60,9 @@ section {
     margin-left: 20px;
 }
 
+/* Semantic change: replaced .hero class selector with #welcomePicture id selector. The hero class was really
+not descriptive at all. Furthermore, since there is only welcome image in each page, we can assign id since
+it is more spcific than class selector. */
 #welcomePicture {
     height: 800px;
     width: 100%;
@@ -61,6 +72,8 @@ section {
     background-position: center;
 }
 
+/* Semantic change: replaced .content class selector with section tag selector. Section is defined in sematic
+rule, just like header and nav. */
 section article {
     margin-bottom: 20px;
     padding: 50px;
@@ -70,7 +83,7 @@ section article {
     color: #ffffff;
 }
 
-section img {
+section article img {
     max-height: 200px;
 }
 
@@ -84,7 +97,9 @@ section img {
     margin-left: 25px;
 }
 
-section h2 {
+/* Just like aside, combining all three selectors into one since they are applying same style to
+the same type of content. */
+section article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -93,6 +108,7 @@ p {
     font-size: 16px;
 }
 
+/* Semantic change: replaced .benefits class selector with aside tag selector, just like section. */
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -104,22 +120,27 @@ aside {
     background-color: #2589bd;
 }
 
+/* Semantic change: Combining .benefit-lead .benefit-brand .benefit-cost into a single tag selector.
+According to semantic rule, the contents within section and aside can use article tag. Since all 3 
+class are applying the same style to the same type of content, combined all of them. */
 aside article {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-h3 {
+aside article h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-aside img {
+aside article img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Semantic change: again, applying the semantic rule on footer, replaced .footer class selector with
+footer tag selector. */
 footer {
     padding: 30px;
     clear: both;
