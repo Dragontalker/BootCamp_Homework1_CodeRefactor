@@ -54,7 +54,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -74,7 +74,7 @@ it is more spcific than class selector. */
 
 /* Semantic change: replaced .content class selector with section tag selector. Section is defined in sematic
 rule, just like header and nav. */
-section article {
+main article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -83,7 +83,7 @@ section article {
     color: #ffffff;
 }
 
-section article img {
+main article img {
     max-height: 200px;
 }
 
@@ -99,7 +99,7 @@ section article img {
 
 /* Just like aside, combining all three selectors into one since they are applying same style to
 the same type of content. */
-section article h2 {
+main article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
